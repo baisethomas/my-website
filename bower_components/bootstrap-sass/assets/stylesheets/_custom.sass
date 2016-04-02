@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300)
 
 $gray-base: #000 !default
+
 body
   // background-image: url('https://s3.amazonaws.com/baise-portfolio/header-image.jpg')
   // background-size: cover
@@ -25,7 +26,7 @@ body
   height: 100%
   background-image: url("https://s3.amazonaws.com/baise-portfolio/header-image.jpg")
   background-size: cover
-  
+
   .content
     
     .call-out
@@ -44,7 +45,20 @@ body
       small
         color: #e6e6e6
         font-size: 15px
-    
+      
+      @media ( max-width: 768px ) and ( min-width: 320px )
+        h1
+          font-size: 37px
+          
+        p
+          font-size: 21px
+          line-height: .1
+        small
+          font-size: 18px
+        
+        
+          
+
     .logo
       svg
         width: 100%
@@ -54,7 +68,7 @@ body
     @media ( max-width: 768px)
       .logo
         svg
-          width: 50%
+          width: 90%
           height: auto
           padding-top: 70px
 /*
@@ -104,6 +118,7 @@ body
       color: #d9d9d9
     p
       color: white
+      
   @media ( max-width: 768px)  
     .content
       padding-top: 0
