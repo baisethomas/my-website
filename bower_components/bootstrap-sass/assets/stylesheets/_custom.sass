@@ -21,7 +21,7 @@ body
 /* ---- Top Content Styles ----/
 /*  
 .top-content
-  padding-bottom: 120px
+  padding-bottom: 90px
   height: 100%
   background-image: url("https://s3.amazonaws.com/baise-portfolio/header-image.jpg")
   background-size: cover
@@ -50,7 +50,13 @@ body
         width: 100%
         height: auto
         padding-top: 100px
-
+        
+    @media ( max-width: 768px)
+      .logo
+        svg
+          width: 50%
+          height: auto
+          padding-top: 70px
 /*
 /* ---- Middle Content Styles ----/
 /*
@@ -63,13 +69,17 @@ body
   
   .content
     text-align: center
-    padding-top: 100px
+    padding-top: 86px
     padding-bottom: 100px
     h1
       text-transform: uppercase
       color: red
-
-
+    
+  @media ( max-width: 768px)
+    .content
+      text-align: center
+      padding-top: 0
+      padding-bottom: 20px
 /*
 /* ---- Middle Content 2 Styles ----/
 /*
@@ -79,7 +89,6 @@ body
   height: 100%
   font-family: 'Open Sans', sans-serif
   font-weight: 300
-
   
   .content
     padding-top: 100px
@@ -95,7 +104,11 @@ body
       color: #d9d9d9
     p
       color: white
-
+  @media ( max-width: 768px)  
+    .content
+      padding-top: 0
+      padding-bottom: 20px
+      text-align: center
 
 /*
 /* ---- Footer Styles ----/
@@ -106,14 +119,75 @@ body
   width: 100%
   height: auto
   background-color: red
-  
-  h2
+
+  .contact
     text-align: center
-    color: white
     
+    h2
+      color: white
+      
     a 
       text-decoration: none
       
       :hover
         color: black
         transition-timing-function: ease-in-out
+
+/*
+/* ---- Media Queries ----/
+/* 
+
+// @media (max-width: 768px) 
+//   .top-content
+//     height: 10vh
+//     background-image: url("https://s3.amazonaws.com/baise-portfolio/header-image.jpg")
+//     background-size: cover
+    
+//     .content
+      
+//       .call-out
+//         font-family: 'Open Sans', sans-serif
+//         font-weight: 400
+//         color: white
+//         h1
+//           font-family: 'Electrolize', sans-serif
+//           font-size: 2.45em
+//           padding-left: 0
+//           margin-left: 0
+//         p
+//           font-size: 1.0em
+
+       
+//         small
+//           color: #e6e6e6
+//           font-size: 10px
+      
+//       .logo
+//         text-align: center
+//         svg
+//           width: 10%
+//           height: 10%
+//           padding-top: 20px
+          
+//   .middle-content-2
+//     background-color: #404040
+//     width: 100%
+//     height: 100%
+//     font-family: 'Open Sans', sans-serif
+//     font-weight: 300
+  
+    
+//     .content
+//       padding-top: -100px
+//       padding-bottom: 100px
+//       text-align: center
+  
+//       h1
+//         padding-top: 25px
+//         text-transform: uppercase
+//         color: #d9d9d9
+        
+//       h2
+//         color: #d9d9d9
+//       p
+//         color: white
